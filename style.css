@@ -1,0 +1,869 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-header__bar-menu {
+    display: none;
+}
+
+.separate {
+    width: 10px;
+    border: 0;
+    border-top: 20px solid;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color: #002865;
+}
+
+.separate-2{
+    display: none;
+}
+
+.icon-arrow {
+    margin-left: 15px;
+}
+
+.link-arrow {
+    margin-left: 10px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container--v1 {
+    background-color: #F1F5FC;
+    padding: 50px 0 50px 0;
+}
+
+.container--v2 {
+    background-color: #0066FFD9;
+    padding: 50px 0 50px 0;
+}
+
+.container--v3{
+    background-color: #002865;
+    padding: 20px 0 20px 0;
+    border-top: 6px solid #B7F2FF;
+}
+
+
+/* <!-- ========================================= HEADER ========================================= --> */
+
+
+.container-header {
+    background-color: #008FEC;
+    width: 100%;
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: 0.13fr 1fr;
+    justify-items: end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.grid-header__logo img {
+    width: 100%;
+}
+
+.grid-header__btn {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.grid-header__btn--special {
+    background-color: #002865;
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin-left: 60px;
+}
+
+
+
+
+/* <!-- ========================================= HERO CONTENT ========================================= --> */
+
+
+.grid-hero {
+    padding: 50px 20px 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-hero__title {
+    font-size: 70px;
+    line-height: 75px;
+    font-weight: 900;
+    color: #002865;
+    padding-right: 60px;
+}
+
+.grid-hero__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #656565;
+    margin-bottom: 50px;
+    padding-right: 90px;
+}
+
+.grid-hero__btn {
+    background-color: #008FEC;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: aliceblue;
+    transition: all 300ms;
+}
+
+.grid-hero__btn:hover {
+    background-color: #3BBCFF;
+}
+
+.grid-hero__img {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    background: rgb(9, 113, 239);
+    background: linear-gradient(0deg, rgba(9, 113, 239, 1) 27%, rgba(59, 188, 255, 1) 96%);
+    cursor: pointer;
+}
+
+.grid-hero__img:hover {
+    background: #3BBCFF;
+}
+
+.grid-hero__img img {
+    width: 80%;
+    padding: 64px 20px 0 20px;
+}
+
+
+/* <!-- ========================================= BOOKING ========================================= --> */
+
+
+.grid-booking {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: aliceblue;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.grid-booking__reserva {
+    text-align: center;
+    padding: 30px 50px 30px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.5);
+    background: rgb(9, 113, 239);
+    background: linear-gradient(0deg, rgba(9, 113, 239, 1) 27%, rgba(59, 188, 255, 1) 96%);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.grid-booking__reserva:hover {
+    background: #37BBFF;
+}
+
+.grid-booking__telemedicina {
+    text-align: center;
+    padding: 30px 50px 30px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+    color: #002865;
+    cursor: pointer;
+}
+
+.grid-booking__telemedicina:hover {
+    background: #f0faff;
+}
+
+.grid-booking__icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.grid-booking__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.grid-booking__subtitle {
+    margin-bottom: 40px;
+}
+
+.grid-booking__btn {
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.grid-booking__btn:hover {
+    color: #002865;
+}
+
+.grid-booking__icon--v2 {
+    color: #008FEC;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.grid-booking__title--v2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.grid-booking__subtitle--v2 {
+    margin-bottom: 40px;
+}
+
+.grid-booking__btn--v2 {
+    font-weight: 600;
+    color: #0971EF;
+}
+
+.grid-booking__btn--v2:hover {
+    color: #002865;
+}
+
+
+/* <!-- ========================================= INFORMATION ========================================= --> */
+
+
+.grid-information {
+    background-color: #F1F5FC;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 50px 30px 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.5);
+}
+
+.text-color {
+    color: #0971EF;
+    font-weight: 700;
+}
+
+.grid-information__hour {
+    display: grid;
+    justify-content: center;
+}
+
+.grid-information__title {
+    color: #002865;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.grid-information__text1 {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 30px;
+}
+
+.grid-information__text2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-information__emergency {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    color: #1472FF;
+    font-size: 17px;
+    border-left: 1px solid #D7D7D7;
+    border-right: 1px solid #D7D7D7;
+}
+
+.grid-information__phono {
+    font-size: 32px;
+    font-weight: 700;
+    color: #002865;
+    margin-top: 15px;
+}
+
+.grid-information__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7A7A7A;
+
+}
+
+.grid-information__location h2 {
+    color: #1472FF;
+}
+
+
+/* <!-- ========================================= SPECIAL SECTION ========================================= --> */
+
+
+.grid-special {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    padding: 100px 20px 50px 20px;
+    gap: 40px;
+}
+
+.grid-special__img img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.grid-special__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.grid-special__title {
+    font-size: 48px;
+    color: #002865;
+    font-weight: 700;
+}
+
+.grid-special__subtitle {
+    color: #002865;
+    margin-right: 30%;
+    margin-bottom: 35px;
+}
+
+.grid-special__btn {
+    background-color: #1472FF;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.grid-special__btn:hover {
+    background-color: #008FEC;
+}
+
+
+/* <!-- ========================================= SERVICES ========================================= --> */
+
+
+.grid-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 90px;
+    padding: 10px 20px;
+}
+
+.grid-services__box-1 {
+    color: #002865;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.5);
+
+}
+
+.grid-services__box-1:hover {
+    background-color: #f0faff;
+
+}
+
+.grid-services__box-2 {
+    color: white;
+    text-align: center;
+    background: rgb(9, 113, 239);
+    background: linear-gradient(0deg, rgba(9, 113, 239, 1) 27%, rgba(59, 188, 255, 1) 96%);
+    padding: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 7px -2px rgba(0, 0, 0, 0.5);
+}
+
+.grid-services__box-2:hover {
+    background: #3BBCFF;
+}
+
+.grid-services__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.grid-services__subtitle {
+    margin-bottom: 40px;
+}
+
+.grid-services__title--v2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.grid-services__subtitle--v2 {
+    margin-bottom: 40px;
+}
+
+.icon-services {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.icon-services--0 {
+    color: #008FEC;
+}
+
+.container--v1 {
+    padding-top: 0;
+}
+
+/* <!-- ========================================= TITLES ========================================= --> */
+
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+
+.container__title {
+    color: #002865;
+    font-size: 48px;
+}
+
+
+/* <!-- ========================================= TEAM ========================================= --> */
+
+
+.grid-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px 120px 20px;
+}
+
+.grid-team__img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.grid-team__title {
+    color: #002865;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.grid-team__subtitle {
+    color: #9B9B9B;
+    font-size: 15px;
+    letter-spacing: 1.6px;
+}
+
+.grid-team__doc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* <!-- ========================================= FORM ========================================= --> */
+
+
+.grid-title-form{
+    display: flex;
+    flex-direction: column;   
+    color: white; 
+    align-items: center;
+    padding: 50px 20px 40px 20px; 
+    gap: 20px;
+}
+
+.grid-title-form .separate{      
+    color: white;   
+}
+
+.grid-title-form__title{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.grid-form{    
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 0 20px 120px 20px;      
+}
+
+.grid-form__text{
+    font-size: 18px;
+    color:#7A7A7A;
+    border: none;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    outline: none;   
+}
+
+.grid-form__email{
+    font-size: 18px;
+    color:#7A7A7A;
+    border: none;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;  
+    outline: none;    
+}
+
+.grid-form__textarea{
+    display:grid;
+    grid-template-columns: 1fr ; 
+    color:#7A7A7A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    border: none; 
+    outline: none;   
+}
+
+.grid-form__submit{
+    display:grid;
+    grid-template-columns: 1fr; 
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px;
+    border-radius: 8px;
+    background-color:#002865;
+    color: white;
+    border: none;
+    transition: ease-in-out 300ms;
+}
+
+.grid-form__submit:hover{
+    background: #37BBFF;    
+}
+
+.grid-form__text::placeholder{
+    color: #9B9B9B;  
+}
+
+.grid-form__email::placeholder {
+    color: #9B9B9B;
+}
+
+.grid-form__textarea::placeholder{
+    color: #9B9B9B;;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-column: 1/3;
+}
+
+
+/* <!-- ========================================= FOOTER ========================================= --> */
+
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 1fr 1fr;
+    padding: 50px 20px 40px 20px; 
+    gap: 20px;
+    justify-items: center;
+    color: white;
+}
+
+.grid-footer__logo img{
+    width: 60%;
+}
+
+.grid-footer__reserva h2{
+    margin-bottom: 20px;
+}
+
+.grid-footer__reserva a{    
+    color: #002865;
+    font-weight: 600;
+    background-color: #E8EFFF;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.grid-footer__hour h2{
+    margin-bottom: 20px;
+}
+
+.grid-footer__hour p{
+    margin-bottom: 20px;
+}
+
+.grid-footer__contact h2{
+    margin-bottom: 20px;
+}
+
+.grid-footer__contact p{
+    margin-bottom: 20px;
+}
+
+
+
+/* <!-- ========================================= RESPONSIVE ========================================= --> */
+
+
+@media(max-width:850px) {
+
+    * {
+        font-size: 15px;
+    }
+
+    /* <!-- ========================================= HEADER ========================================= --> */
+
+
+    .grid-header {  
+        background-color: #008FEC;      
+        grid-template-columns: auto  1fr;   
+        z-index: 2;     
+    }
+
+    .grid-header__menu{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;       
+        align-self: flex-start;        
+        height: 100vh;
+        background-color: #59c8fff3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px;    
+        transition: all 300ms;
+        transform: translateX(-100%); 
+        z-index: 1;  
+    }
+
+    .show-menu{
+        transform: translateX(0%);
+    }
+
+    .grid-header__logo img{
+        width: 35%;
+    }
+
+    .grid-header__btn{
+        color: #1472FF;
+        font-size: 23px;       
+        margin-bottom: 50px;
+        margin-left: 0;        
+    }
+
+    .grid-header__btn:hover{
+        color: white;
+        background-color: #0971EF;   
+        padding: 20px 20px;   
+        border-radius: 35px;  
+    }
+
+    .separate-2{   
+        display: block;  
+        width: 70%;   
+        border: 0;
+        border-top: 1px solid;
+        margin-top: 40px;       
+        color: #002865;
+    }
+
+    .grid-header__btn--special{
+        color: white;
+        margin-top: 40px;
+    }
+
+    .grid-header__bar-menu {
+        cursor: pointer;
+        display: flex;
+        color: white;        
+    }
+
+    .fa-bars{
+        font-size: 35px;
+    }
+    
+
+/* <!-- ========================================= RESPONSIVE-HERO========================================= --> */
+
+
+    .grid-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .separate {
+        display: flex;
+        align-self: center;
+    }
+
+    .grid-hero__text {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .grid-hero__title {
+        font-size: 60px;
+        padding-right: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .grid-hero__subtitle {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .grid-hero__btn {
+        text-align: center;
+        align-self: center;
+        margin-bottom: 60px;
+    }
+
+
+    /* <!-- ========================================= RESPONSIVE-BOOKING ========================================= --> */
+
+
+    .grid-booking {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* <!-- ========================================= RESPONSIVE-INFORMATION ========================================= --> */
+
+    .grid-information__title {
+        text-align: center;
+    }
+
+    .grid-information {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-information__emergency {
+        border-top: 1px solid #D7D7D7;
+        border-bottom: 1px solid #D7D7D7;
+        border-left: 0 solid #D7D7D7;
+        border-right: 0 solid #D7D7D7;
+        padding: 90px 0;
+    }
+
+
+    /* <!-- ========================================= RESPONSIVE-SPECIAL SECTION ========================================= --> */
+
+
+    .grid-special {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-special__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-special__title {
+        text-align: center;
+    }
+
+    .grid-special__subtitle {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .grid-special__btn{
+        margin-bottom: 70px;
+    } 
+
+    /* <!-- ========================================= RESPONSIVE-SERVICES ========================================= --> */
+
+
+    .grid-services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* <!-- ========================================= RESPONSIVE-TEAM ========================================= --> */
+
+
+    .grid-team {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* <!-- ========================================= RESPONSIVE-FOOTER ========================================= --> */
+
+    .grid-footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px 20px 40px 20px; 
+        gap: 60px;
+        justify-items: center;
+        color: white;
+        text-align: center;
+    }
+
+}
+
+
+@media(max-width:470px) {
+
+    .grid-services {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-team {
+        grid-template-columns: 1fr;
+    }
+
+/* <!-- ========================================= RESPONSIVE-TITLES ========================================= --> */
+
+    .section-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        margin-bottom: 40px;
+    }   
+
+    .container__title {
+        color: #002865;
+        font-size: 48px;
+    }
+    
+}
