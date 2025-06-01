@@ -867,3 +867,292 @@ a {
     }
     
 }
+
+/* Theme Switch Styles */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #002865; /* Dark mode accent color */
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #002865;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .container-header {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .grid-header__btn {
+    color: #e0e0e0;
+}
+
+.dark-mode .grid-header__btn--special {
+    background-color: #008FEC; /* Light blue for contrast */
+    color: #121212;
+}
+
+.dark-mode .grid-hero__title {
+    color: #008FEC; /* Light blue */
+}
+
+.dark-mode .grid-hero__subtitle {
+    color: #b0b0b0;
+}
+
+.dark-mode .grid-hero__btn {
+    background-color: #008FEC;
+    color: #121212;
+}
+.dark-mode .grid-hero__btn:hover {
+    background-color: #3BBCFF;
+}
+
+
+.dark-mode .grid-hero__img {
+    background: #1f1f1f; /* Darker background for image container */
+}
+.dark-mode .grid-hero__img:hover {
+    background: #2a2a2a;
+}
+
+
+.dark-mode .grid-booking__reserva {
+    background: linear-gradient(0deg, #008FEC 27%, #3BBCFF 96%);
+    color: #121212;
+}
+.dark-mode .grid-booking__reserva:hover {
+    background: #3BBCFF;
+}
+
+
+.dark-mode .grid-booking__telemedicina {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+.dark-mode .grid-booking__telemedicina:hover {
+    background: #2a2a2a;
+}
+.dark-mode .grid-booking__btn--v2 {
+    color: #008FEC;
+}
+.dark-mode .grid-booking__btn--v2:hover {
+    color: #e0e0e0;
+}
+
+
+.dark-mode .grid-information {
+    background-color: #1f1f1f;
+    box-shadow: 0 0 7px -2px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .grid-information__title {
+    color: #008FEC;
+}
+
+.dark-mode .text-color {
+    color: #3BBCFF; /* Lighter blue */
+}
+
+.dark-mode .grid-information__emergency {
+    color: #3BBCFF;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+.dark-mode .grid-information__phono {
+    color: #008FEC;
+}
+.dark-mode .grid-information__location h2 {
+    color: #3BBCFF;
+}
+.dark-mode .grid-information__location {
+    color: #b0b0b0;
+}
+
+
+.dark-mode .grid-special__title {
+    color: #008FEC;
+}
+
+.dark-mode .grid-special__subtitle {
+    color: #b0b0b0;
+}
+
+.dark-mode .grid-special__btn {
+    background-color: #008FEC;
+    color: #121212;
+}
+.dark-mode .grid-special__btn:hover {
+    background-color: #3BBCFF;
+}
+
+.dark-mode .container--v1 {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .section-title .container__title {
+    color: #008FEC;
+}
+
+.dark-mode .separate {
+    color: #008FEC;
+}
+
+
+.dark-mode .grid-services__box-1 {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    box-shadow: 0 0 7px -2px rgba(255, 255, 255, 0.1);
+}
+.dark-mode .grid-services__box-1:hover {
+    background-color: #333;
+}
+.dark-mode .icon-services--0 {
+    color: #008FEC;
+}
+
+
+.dark-mode .grid-services__box-2 {
+    background: linear-gradient(0deg, #008FEC 27%, #3BBCFF 96%);
+    color: #121212;
+    box-shadow: 0 0 7px -2px rgba(255, 255, 255, 0.1);
+}
+.dark-mode .grid-services__box-2:hover {
+    background: #3BBCFF;
+}
+
+.dark-mode .grid-team__title {
+    color: #008FEC;
+}
+
+.dark-mode .grid-team__subtitle {
+    color: #b0b0b0;
+}
+
+.dark-mode .container--v2 { /* Form container */
+    background-color: #1f1f1f;
+}
+
+.dark-mode .grid-title-form__title {
+    color: #008FEC;
+}
+.dark-mode .grid-title-form__subtitle {
+    color: #b0b0b0;
+}
+.dark-mode .grid-title-form .separate{
+    color: #008FEC;
+}
+
+.dark-mode .grid-form__text,
+.dark-mode .grid-form__email,
+.dark-mode .grid-form__textarea {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #333; /* Add subtle border for better visibility */
+}
+.dark-mode .grid-form__text::placeholder,
+.dark-mode .grid-form__email::placeholder,
+.dark-mode .grid-form__textarea::placeholder {
+    color: #888;
+}
+
+.dark-mode .grid-form__submit {
+    background-color: #008FEC;
+    color: #121212;
+}
+.dark-mode .grid-form__submit:hover {
+    background-color: #3BBCFF;
+}
+
+.dark-mode .container--v3 { /* Footer */
+    background-color: #121212; /* Darkest background for footer */
+    border-top: 6px solid #008FEC; /* Accent border */
+    color: #e0e0e0;
+}
+
+.dark-mode .grid-footer__reserva a {
+    background-color: #008FEC;
+    color: #121212;
+}
+.dark-mode .grid-footer__reserva a:hover {
+    background-color: #3BBCFF;
+}
+
+/* Adjustments for mobile menu in dark mode */
+.dark-mode .grid-header__menu {
+    background-color: rgba(31, 31, 31, 0.95); /* Darker, slightly transparent */
+}
+.dark-mode .grid-header__btn {
+    color: #008FEC; /* Accent color for menu items */
+}
+.dark-mode .grid-header__btn:hover {
+    color: #121212;
+    background-color: #008FEC;
+}
+.dark-mode .separate-2 {
+    color: #008FEC;
+}
+.dark-mode .grid-header__btn--special {
+    color: #121212; /* Ensure special button text is readable */
+}
